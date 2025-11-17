@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Peak&Tower | Research</title>
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            background: #F4E9DA;
+            color: #0B0D0E;
+            font-family: 'IBM Plex Sans', sans-serif;
+            line-height: 1.2;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1rem;
+        }
+        
+        .container {
+            max-width: 630px;
+            padding: 0 2rem;
+            text-align: center;
+            animation: fadeIn 0.8s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .logo {
+            margin-bottom: 3rem;
+        }
+        
+        .logo img {
+            height: 88px;
+            width: auto;
+        }
+        
+        h1 {
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: #0B0D0E;
+            margin-bottom: 3rem;
+            letter-spacing: 0.1em;
+        }
+        
+        .papers {
+            list-style: none;
+        }
+        
+        .papers li {
+            margin-bottom: 1.5rem;
+        }
+        
+        .papers a {
+            color: #0B0D0E;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 300;
+            border-bottom: 1px dashed transparent;
+            transition: all 0.3s ease;
+            padding-bottom: 2px;
+            display: inline-block;
+        }
+        
+        .papers a:hover {
+            border-bottom-color: #C6420D;
+            transform: translateY(-1px);
+        }
+        
+        .meta {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.65rem;
+            color: #242A30;
+            margin-top: 0.25rem;
+            opacity: 0.8;
+        }
+        
+        footer {
+            margin-top: 4rem;
+            font-size: 0.7rem;
+            opacity: 0.6;
+            font-family: 'IBM Plex Mono', monospace;
+        }
+        
+        footer a {
+            color: #0B0D0E;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s;
+        }
+        
+        footer a:hover {
+            border-bottom-color: #C6420D;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="img/logo.svg" alt="Peak&Tower">
+        </div>
+        
+        <h1>RESEARCH PREPRINTS</h1>
+        
+        <ul class="papers">
+            <li>
+                <a href="pre/0x00-spectral-consensus.pdf">
+                   Spectral Byzantine Consensus: Anisotropic Aggregation on Continuous Semantic Fields
+                </a>
+                <div class="meta">0x00 · Preprint - Nov. 2025</div>
+            </li>
+        </ul>
+        
+        <footer>
+            <a href="https://peakandtower.com">peakandtower.com</a>
+        </footer>
+    </div>
+</body>
+</html>
